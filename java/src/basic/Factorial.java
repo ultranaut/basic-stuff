@@ -5,7 +5,7 @@ public class Factorial {
   
   public long factorialize(long n) {
     if (n < 2) {
-      return n;
+      return 1;
     } else {
       return n * factorialize(n - 1);
     }
