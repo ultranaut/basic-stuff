@@ -1,10 +1,10 @@
 package basic;
 
-public class HelloWorld {
+public class HelloWorld implements Hello {
   private String greeting;
   private String recipient;
   
-  public HelloWorld() {
+  public HelloWorld()  {
     this("Hello", "world");
   }
   
