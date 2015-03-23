@@ -18,16 +18,12 @@ public class Basic {
     // -------------------------------------------------------------------
     System.out.print(String.format("\n\n%60s\n\n", "").replace(' ', '-'));
 
-    int[] sortList = {5, 2, 4, 3, 1};
-    MergeSort sort = new MergeSort(sortList);
-    int[] sorted = sort.sort();
-
-    StringBuilder sb = new StringBuilder();
-    sb.append("sorted list: ");
-    for (int item : sorted) {
-      sb.append(" " + item);
-    }
-    System.out.println(sb.toString());
+    int[] list = {5, 2, 4, 3, 1};
+    SortableList sortList = new SortableList(list);
+    
+    int[] sorted = sortList.sort();
+    
+    System.out.println(sortList.toString());
 
   }
 }

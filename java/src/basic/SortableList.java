@@ -2,18 +2,20 @@ package basic;
 
 import java.util.Formatter;
 
-public class MergeSort {
-  private int[] list;
+public class SortableList {
+  private int[] original;
+  private int[] sorted;
   
-  public MergeSort(int[] list) {
-    this.list = list;
+  public SortableList(int[] list) {
+    this.original = list;
   }
   
   public int[] sort() {
-    return this.sort(list);
+    this.sorted = this.sort(this.original);
+    return this.sorted;
   }
   
-  public int[] sort(int[] list) {
+  private int[] sort(int[] list) {
     if (list.length < 2) {
       return list;
     } else {
@@ -73,6 +75,24 @@ public class MergeSort {
     
     int[][] split = {subA, subB};
     return split;
+  }
+  
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    
+    sb.append("original: ");
+    for (int item : this.original) {
+      sb.append(" " + item);
+    }
+    sb.append("\n");
+    
+    sb.append("  sorted: ");
+    for (int item : this.sorted) {
+      sb.append(" " + item);
+    }
+    sb.append("\n");
+    
+    return sb.toString();
   }
   
 }
