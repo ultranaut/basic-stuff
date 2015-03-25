@@ -76,9 +76,14 @@ public class SortableList {
     int[][] split = {subA, subB};
     return split;
   }
-  
+
+
+  @Override
   public String toString() {
+    
     StringBuilder sb = new StringBuilder();
+    
+    sb.append(getClass().getSimpleName() + "\n");
     
     sb.append("original: ");
     for (int item : this.original) {
