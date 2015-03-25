@@ -1,6 +1,6 @@
 package basic;
 
-import utils.Titler;
+import basic.utils.Titler;
 
 public class Basic {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package utils;
+package basic.utils;
 
 import java.util.Arrays;
 import java.util.Formatter;
