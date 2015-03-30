@@ -1,15 +1,17 @@
-package basic;
+package basic; 
 
-import java.util.Formatter;
-
-public class SortableList {
+public class MergeSort implements Sort {
   private int[] original;
   private int[] sorted;
   
-  public SortableList(int[] list) {
+  public MergeSort(int[] list) {
     this.original = list;
   }
   
+  /* (non-Javadoc)
+   * @see basic.Sort#sort()
+   */
+  @Override
   public int[] sort() {
     this.sorted = this.sort(this.original);
     return this.sorted;
@@ -78,6 +80,9 @@ public class SortableList {
   }
 
 
+  /* (non-Javadoc)
+   * @see basic.Sort#toString()
+   */
   @Override
   public String toString() {
     
@@ -85,11 +90,13 @@ public class SortableList {
     
     sb.append(getClass().getSimpleName() + "\n");
     
+    /*
     sb.append("original: ");
     for (int item : this.original) {
       sb.append(" " + item);
     }
     sb.append("\n");
+    */
     
     sb.append("  sorted: ");
     for (int item : this.sorted) {

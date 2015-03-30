@@ -31,9 +31,9 @@ public class Basic {
     // Merge sort
     titler.display("Merge sort");
     int[] list = {5, 2, 4, 3, 1};
-    SortableList sortList = new SortableList(list);
+    MergeSort sortList = new MergeSort(list);
 
-    int[] sorted = sortList.sort();
+    sortList.sort();
 
     System.out.println(sortList.toString());
 
