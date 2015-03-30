@@ -31,7 +31,7 @@ public class Basic {
     // Merge sort
     titler.display("Merge sort");
     int[] list = {5, 2, 4, 3, 1};
-    MergeSort sortList = new MergeSort(list);
+    BubbleSort sortList = new BubbleSort(list);
 
     sortList.sort();
 
