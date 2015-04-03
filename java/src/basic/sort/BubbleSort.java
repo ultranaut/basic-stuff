@@ -1,4 +1,4 @@
-package basic;
+package basic.sort;
 
 public class BubbleSort implements Sort {
   private int[] original;
@@ -18,7 +18,6 @@ public class BubbleSort implements Sort {
     int[] sorted = list;
     for (int i = 1; i < sorted.length; i++) {
         for (int j = 0; j < sorted.length - i; j++) {
-          System.out.println();
           if (sorted[j] > sorted[j+1]) {
             int temp = sorted[j+1];
             sorted[j+1] = sorted[j];

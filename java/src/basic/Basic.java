@@ -1,5 +1,6 @@
 package basic;
 
+import basic.sort.BubbleSort;
 import basic.utils.Titler;
 
 public class Basic {
@@ -31,6 +32,7 @@ public class Basic {
     // Merge sort
     titler.display("Merge sort");
     int[] list = {5, 2, 4, 3, 1};
+
     BubbleSort sortList = new BubbleSort(list);
 
     sortList.sort();
