@@ -1,11 +1,11 @@
 package basic;
 
-import basic.sort.BubbleSort;
+import basic.sort.*;
 import basic.utils.Titler;
 
 public class Basic {
   public static void main(String[] args) {
-    
+
     Titler titler = new Titler(30);
 
     // -------------------------------------------------------------------
@@ -31,13 +31,27 @@ public class Basic {
     // -------------------------------------------------------------------
     // Merge sort
     titler.display("Merge sort");
-    int[] list = {5, 2, 4, 3, 1};
+    int[] list = {3, 7, 8, 6, 2, 1, 9, 5, 4};
 
-    BubbleSort sortList = new BubbleSort(list);
+    MergeSort sortList = new MergeSort(list);
 
     sortList.sort();
 
     System.out.println(sortList.toString());
+
+
+    // -------------------------------------------------------------------
+    // Quick sort
+
+    titler.display("QuickSort");
+    int[] quicklist = {3, 7, 8, 6, 2, 1, 9, 5, 4};
+
+    QuickSort quicksort = new QuickSort(quicklist);
+
+    quicksort.sort();
+
+    System.out.println(quicksort.toString());
+
 
   }
 }
