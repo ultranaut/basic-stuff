@@ -1,3 +1,3 @@
 # Basic stuff.
 
-Oldies but goodies.
+Learning some Java.
